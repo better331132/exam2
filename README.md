@@ -83,3 +83,10 @@
   
   
 2[국립국어원QnA크롤링](https://github.com/better331132/exam2/blob/master/crawling_exam/crawling_team_pj.py)  
+  
+  
+# 데이터 저장  
+1[melon-top100 저장](https://github.com/better331132/exam2/blob/master/CrawlandSave_melon/melondb_final.py)  
+  
+  
+2[melon-top100 모듈](https://github.com/better331132/exam2/blob/master/CrawlandSave_melon/melondbft.py)  
