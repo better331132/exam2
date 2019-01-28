@@ -129,7 +129,7 @@ with conn_melondb:
             lst_A = [songNo, rankDate, rank, likeCnt, crawlDate]
             sql_A = "insert ignore into SongRank(songNo, rankDate, rank, likeCnt, crawlDate) values(%s, %s, %s, %s, %s)"
             cur_A.execute(sql_A, lst_A)
-
+        #=========================================================================================================B타입
         else:
             for artist in artists:
                 t_artistNo = artist.attrs['href']
@@ -184,7 +184,7 @@ with conn_melondb:
                         sql_M = """insert ignore into SongArtist(songNo, artistNo)
                                                 values(%s, %s)"""
                         cur_M.execute(sql_M, lst_M)
-                #=========================================================================================================D타입
+                #=========================================================================================================C타입
                 else:
                     print("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
                     rating = bft.crawl_rating(albumNo)
@@ -252,15 +252,15 @@ with conn_melondb:
                         lst_A = [songNo, rankDate, rank, likeCnt, crawlDate]
                         sql_A = "insert ignore into SongRank(songNo, rankDate, rank, likeCnt, crawlDate) values(%s, %s, %s, %s, %s)"
                         cur_A.execute(sql_A, lst_A)
-                        for artist in artists:
-                            t_artistNo = artist.attrs['href']
-                            artistNo = re.findall(pattern_no, t_artistNo)[0]
-                            lst_M = [songNo, artistNo]
-                            sql_M = """insert ignore into SongArtist(songNo, artistNo)
-                                                    values(%s, %s)"""
-                            cur_M.execute(sql_M, lst_M)
+                        t_artistNo = artist.attrs['href']
+                        artistNo = re.findall(pattern_no, t_artistNo)[0]
+                        lst_M = [songNo, artistNo]
+                        sql_M = """insert ignore into SongArtist(songNo, artistNo)
+                                                values(%s, %s)"""
+                        cur_M.execute(sql_M, lst_M)
+                #=========================================================================================================D타입
     conn_melondb.commit()
-#=========================================================================================================E타입
+
 noo = set(newSong_oldAlbum_oldArtist)
 non = set(newSong_oldAlbum_newArtist)
 nno = set(newSong_newAlbum_oldArtist)
