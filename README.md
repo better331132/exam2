@@ -86,7 +86,16 @@
   
   
 # 데이터 저장  
-1[melon-top100 저장](https://github.com/better331132/exam2/blob/master/CrawlandSave_melon/melondb_final.py)  
+1[naverapi_mysql](https://github.com/better331132/exam2/blob/master/20190129/naver_api_mysql.py)  
   
   
-2[melon-top100 모듈](https://github.com/better331132/exam2/blob/master/CrawlandSave_melon/melondbft.py)  
+2[parsing_algorithm](https://github.com/better331132/exam2/blob/master/20190129/htmlparsing_mysql.py)  
+  
+  
+P1[openpyxl_push](  
+  
+  
+P2-1[melon-top100 저장](https://github.com/better331132/exam2/blob/master/CrawlandSave_melon/melondb_final.py)  
+  
+  
+P2-2[melon-top100 모듈](https://github.com/better331132/exam2/blob/master/CrawlandSave_melon/melondbft.py)  
