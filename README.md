@@ -92,7 +92,7 @@
 2[parsing_algorithm](https://github.com/better331132/exam2/blob/master/20190129/htmlparsing_mysql.py)  
   
   
-P1[openpyxl_push](  
+P1[openpyxl_push](https://github.com/better331132/exam2/blob/master/20190129/openpyxl_trythis_final.py)  
   
   
 P2-1[melon-top100 저장](https://github.com/better331132/exam2/blob/master/CrawlandSave_melon/melondb_final.py)  
