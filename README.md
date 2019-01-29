@@ -86,7 +86,10 @@
   
   
 # 데이터 저장  
-1[naverapi_mysql](https://github.com/better331132/exam2/blob/master/20190129/naver_api_mysql.py)  
+1-1[naverapi_mysql](https://github.com/better331132/exam2/blob/master/20190129/naver_api_mysql.py)  
+  
+  
+1-2[naverapi_mysql](https://github.com/better331132/exam2/blob/master/20190129/naver_api_tables.sql)  
   
   
 2[parsing_algorithm](https://github.com/better331132/exam2/blob/master/20190129/htmlparsing_mysql.py)  
