@@ -117,6 +117,7 @@ with conn_melondb:
             sql_B = """insert ignore into Song(songNo, songTitle, genre, albumNo) 
                                     values (%s, %s, %s, %s)"""
             cur_B.execute(sql_B, lst_B)
+            newSong_oldAlbum_oldArtist.append(songNo)
             for artist in artists:
                 t_artistNo = artist.attrs['href']
                 artistNo = re.findall(pattern_no, t_artistNo)[0]
@@ -128,7 +129,6 @@ with conn_melondb:
             lst_A = [songNo, rankDate, rank, likeCnt, crawlDate]
             sql_A = "insert ignore into SongRank(songNo, rankDate, rank, likeCnt, crawlDate) values(%s, %s, %s, %s, %s)"
             cur_A.execute(sql_A, lst_A)
-            newSong_oldAlbum_oldArtist.append(songNo)
         #=========================================================================================================B타입
         else:
             for artist in artists:
